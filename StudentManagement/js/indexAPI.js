@@ -1,5 +1,5 @@
-var URL  = 'https://my-json-server.typicode.com/SawSoni/sawsoni.github.io/students/';
-//var URL = "http://demo.soni.com:3000/students/";
+//var URL  = 'https://my-json-server.typicode.com/SawSoni/sawsoni.github.io/students/';
+var URL = "http://demo.soni.com:3000/students/";
 /**
 Call on load
 */

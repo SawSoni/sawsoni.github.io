@@ -12,6 +12,8 @@ $(document).ready(function(){
 		var result = $('#result');
 		result.html(add(x, y));
 	})
+
+	
 	
 
 	$('#sub').on('click', function(){
@@ -32,7 +34,6 @@ $(document).ready(function(){
 
 
 	});
-
 
 	/**
 	 	This function add and return result of two params x and y

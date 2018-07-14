@@ -58,7 +58,7 @@ function createDivOfProducts(products){
 						<span class="new">New</span>
 						<!-- <i class="fas fa-shipping-fast"></i> -->
 						<button type="button" class="infoBtn">
-							<span class="wish tool-tip">Add To Bag</span>
+							<span class="wish bagSpan tool-tip"> Add To Bag </span>
 							<i class="fa fa-shopping-bag icon"></i>
 
 						</button>

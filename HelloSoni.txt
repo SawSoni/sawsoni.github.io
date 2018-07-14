@@ -1,5 +1,0 @@
-{
-	"name":"Soni Saw"
-	"age":32
-	"address":"B1-424"
-}

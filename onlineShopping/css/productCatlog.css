@@ -146,15 +146,14 @@
 		color:#FFF;
 		}
 
-	@media screen and (max-width: 1000px){
+	@media (max-width: 800px){
 		.container {
 			flex-direction: column;
 		}
 		 .headerFlex-Child:nth-child(3), .headerFlex-Child:nth-child(4){
 		 	display: none;
 		 }
-
-		 /*.filterContainer {*/
+	 /*.filterContainer {*/
 		 	/*flex:100%;
 		 	margin-top: 400px;
 		 }*/
@@ -171,6 +170,15 @@
 		  .container  {
 		  	margin-top: 800px;
 		  }
+	}
+
+	@media (max-width: 600px){
+		.productContainer {
+			margin-left: 20px;
+		}
+		 nav:nth-child(3),nav:nth-child(4){
+			display: none;
+		 }
 	}
 /*header end*/
 
@@ -213,6 +221,7 @@
 		font-size: 1.2em;
 		/*border:1px solid red;*/
 		position: relative;
+		top: -7px;
 		padding: 3px;
 		cursor: pointer;
 	}
@@ -225,22 +234,33 @@
 		background-color: #FFF;
 		font-size: .8em;
 		padding: 6px;
-		position: relative;
-		display: none;
+		/*position: relative;*/
+		/*display: none;*/
+		visibility: hidden;
+		display: absolute;
+		top: 0;
+		right: 110%;
+		border-radius: 5px;
 	}
-	.tool-tip::before {
+	.tool-tip::after {
 		content: "";
 		display: block;
 		position: absolute;
-		top: 20%;
-		left: 100%;
-		border-top: 7px solid transparent;
-		border-left: 7px solid #FFF;
-		border-bottom: 7px solid transparent;
+		top: 35%;
+		left: 73%;
+		/*border-width: 6px;
+		border-style:solid;*/
+		border:6px solid;
+		border-color:transparent transparent transparent #FFF;
 
+	}
+
+	.bagspan {
+		letter-spacing: 4px;
 	}
 	.wishIconDiv:hover .tool-tip ,.infoBtn:hover .tool-tip {
 		display: inline;
+		visibility: visible;
 	} 
 
 	.quickViewContainer {
@@ -320,7 +340,8 @@
 	}
 
 	.price::before {
-		content: 'Rs.'
+		/*content: 'Rs.';*/
+		/*color:#fff;*/
 	}
 
 	.size {
