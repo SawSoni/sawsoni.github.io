@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>icon</title>
+</head>
+<style>
+	.icon-wrapper {
+		width: 400px;
+		height: 200px;
+		border:1px solid red;
+		position: relative;
+		padding: 20px;
+	}
+
+	.icon-bar-left {
+	border: 1px solid;
+    border-color: transparent transparent #251641 #251641;
+	width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: absolute;
+    top: 45%;
+    left: 20px;
+    transform: rotate(45deg);
+    cursor: pointer;
+	}
+
+	.icon-bar-right {
+	border: 1px solid;
+    border-color: transparent transparent #251641 #251641;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: absolute;
+    top: 45%;
+     right: 20px;
+    transform: rotate(-135deg);
+    cursor: pointer;
+	}
+</style>
+<body>
+<div class="icon-wrapper">
+	<span class="icon-bar-left"></span>
+	<span class="icon-bar-right"></span>
+</div>
+</body>
+</html>

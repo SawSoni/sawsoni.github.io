@@ -16,14 +16,16 @@ router.get('/',function(req,res,next){
 //
 router.post('/',function(req,res,next){
 	var user = req.body;
+	console.log(user);
 	var uname = user.username;
 	var pwd = user.password;
-	console.log(uname, pwd);
-	db.users.findOne({username:uname, password:pwd}, function(err, user){
+	
+	db.users.findOne(user, function(err, user){
 		console.log(user);
 		if(user){
 			res.json({"message":"success"});
 		}else {
+			res.status = 500;
 			res.send({"message":"failed"})
 		}
 		
