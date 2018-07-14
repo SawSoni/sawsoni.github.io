@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cal</title>
+	<style>
+		div {
+			margin: 20px;
+		}
+
+		.headerDiv {
+			background-color: #DDD;
+			text-align: center;
+		}
+
+		/*div > label {
+			margin-top: 15px;
+		}*/
+
+		input[type="text"] {
+			margin-top: 10px;
+			display: block;
+			padding: 5px;
+		}
+
+		button {
+			padding: 7px;
+		}
+	</style>
+</head>
+<body>
+	<div class="headerDiv">
+		<p><h1>My calculatar</h1></p>
+	</div>	
+<div>
+		<div><span>Add: </span><span id="resultAdd"></span></div>
+		<div><span>Sub: </span><span id="resultSub"></span></div>
+		<div><span>Multipilication:</span><span id="resultMulti"></span></div>
+		<div><span>Divition: </span><span id="resultDivition"></span></div>
+		<div><span>Remender: </span><span id="remender"></span></div>
+
+		<div>
+			<label for="input1">Number1:</label> <input type="text" id="input1">
+		<label for="input2">Number2:</label> <input type="text" id="input2">
+
+		</div>
+		<div>
+			<button id="add">Add</button>
+			<button id="sub">Sub</button>
+			<button id="multi">Multipilication</button>
+			<button id="divition">Divition</button>
+			<button id="remen">Remender</button>
+		</div>
+</div>
+		<script>
+
+			var Calculatar = (function(){
+
+				function add(x,y){
+					return parseInt(x) + parseInt(y);
+				}
+
+				function sub(x,y){
+					return parseInt(x) - parseInt(y);
+				}
+
+				function multiplication(x,y){
+
+					return parseInt(x) * parseInt(y);
+				}
+
+				function divition(x,y){
+					return parseInt(x) / parseInt(y);
+				}
+
+				function remender(x,y){
+					return parseInt(x) % parseInt(y);
+				}
+
+				return {
+					add,
+					sub,
+					multiplication,
+					divition,
+					remender
+				};
+
+			})();
+			
+			console.log(Calculatar);
+
+			document.getElementById('add').addEventListener('click', () =>{
+				var showAdd = document.getElementById('resultAdd');
+				var x = document.getElementById('input1').value;
+				var y = document.getElementById('input2').value;
+				showAdd.innerHTML = Calculatar.add(x,y);
+			})
+
+				
+			document.getElementById('sub').addEventListener('click', () =>{
+				var showSub = document.getElementById('resultSub');
+				var x = document.getElementById('input1').value;
+				var y = document.getElementById('input2').value;
+				showSub.innerHTML = Calculatar.sub(x,y);
+			});
+			document.getElementById('multi').addEventListener('click', () =>{
+				var showMulti= document.getElementById('resultMulti');
+				var x = document.getElementById('input1').value;
+				var y = document.getElementById('input2').value;
+				showMulti.innerHTML = Calculatar.multiplication(x,y);
+			});
+			document.getElementById('divition').addEventListener('click',() => {
+				var showDivi = document.getElementById('resultDivition');
+				var x = document.getElementById('input1').value;
+				var y = document.getElementById('input2').value;
+				showDivi.innerHTML = Calculatar.divition(x,y);
+			});
+
+			document.getElementById('remen').addEventListener('click',() => {
+				var remender = document.getElementById('remender');
+				var x = document.getElementById('input1').value;
+				var y = document.getElementById('input2').value;
+				remender.innerHTML = Calculatar.remender(x,y);
+			});
+			
+			function attachClick(){
+				var allBtn = document.querySelectorAll('button');
+				console.log(allBtn);
+				allBtn.forEach(function(v,i){
+					var x = document.getElementById('input1').value;
+					var y = document.getElementById('input2').value;
+					v.addEventListener('click',() => {Calculatar.add(x,y)});
+				})
+
+			}
+
+		</script>
+
+			
+
+</body>
+</html>

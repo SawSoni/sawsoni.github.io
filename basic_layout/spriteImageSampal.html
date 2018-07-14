@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>
+                Sprites
+            </title>
+            <style>
+
+
+    #home {
+      margin-top: 40px;
+			width: 230px;
+			height: 240px;
+			background: url(image/bird.sprite.png) -80px -50px;
+			/*background-repeat: no-repeat;*/
+			
+		}
+
+		.parent {
+			width: 300px;
+			height: 400px;
+			background-color: #000;
+			text-align: center;
+			padding: 30px;
+		}
+
+
+		.next{
+			margin: 120px auto;
+    		width: 70px;
+    		height: 50px;
+    		border-radius: 40px;
+    		/*background: url(image/lime.jpg) -320px -90px;*/
+    		background: url(image/bird.sprite.png);
+			/*animation: goforword 1.0s steps(8) forwards;*/
+			animation: goforword 1.0s steps(4,start) infinite;
+
+			/*animation: animation-name animation-duration animation-timing-function animation-iteration-count*/
+
+			
+			/*steps(int,start|end)	Specifies a stepping function, with two parameters. The first parameter specifies the number of intervals in the function. It must be a positive integer (greater than 0). The second parameter, which is optional, is either the value "start" or "end", and specifies the point at which the change of values occur within the interval. If the second parameter is omitted, it is given the value "end"*/
+
+			/*here: the timing interval will start from start of the image*/
+
+
+
+			/*steps() is a timing function that allows us to break an animation or transition into segments, rather than one continuous transition from one state to another. The function takes two parameters — the first specifies the positive number of steps we want our animation to take.
+			steps(<number_of_steps>, <direction>)
+			so this CSS function allows us to chop our animations into clearly defined stages, or speed things up to create smooth movements.
+
+			
+			/*background-repeat: no-repeat;*/
+		}
+
+		@keyframes goforword {
+			from {
+				/*background-position: 0px ;*/
+        background-position: 320px;
+      }
+      to{
+				/*background-position: 0px;*/
+      }
+
+			
+		}
+
+		.myClass { 
+			background: url(image/bird.sprite.png) no-repeat;
+			margin-top: 50px;
+			/*line-height: 120px; */
+           height: 120px; 
+           width: 140px; 
+           background-position: 0 0; 
+           display: block;
+           color: #FFF;
+           font-size: 1.2em;
+          	outline: none;
+           }
+
+		.myClass:hover { background-position: -140px -20px; }
+            </style>
+        </meta>
+    </head>
+    <body>
+    <h1>Sprite demo</h1>
+    	<div class="parent">
+    		<span style="display: inline-block"   class="next">
+        	</span>
+        	<span style="display: inline-block" class="next"></span>
+        	<span style="display: inline-block" class="next"></span>
+        	<span style="display: inline-block" class="next"></span>
+        </div>
+        <div alt="img" id="home">
+        </div>
+        <!-- <img src="image/bird.sprite.png" id="home"> -->
+        
+        <!-- <img src="image/bgimage.jpg" alt=""> -->
+        <input class="myClass" type="text"/>
+    </body>
+</html>

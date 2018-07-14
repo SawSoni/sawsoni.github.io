@@ -59,8 +59,9 @@
 	/*content_style inside the image style*/
 	.content_style {
 		text-align: center;
-		padding: 100px;
-		color: #fff;
+		padding: 30px;
+		margin: 30px;
+		color: rgba(00,00,00,0.6);
 	
 
 	}
@@ -72,7 +73,7 @@
 	}
 	.content_style h6 {
 		font-size: 20px;
-		margin-bottom: 25px;
+		margin-bottom: 5px;
 		letter-spacing: 4px;
 		/*The letter-spacing property increases or decreases the space between characters in a text*/
 

@@ -1,0 +1,34 @@
+
+	<!-- If the View Template HTML is just 3 lines we have used an inline template instead of an external tenplate, like this html -->
+	<table>
+		<tr>
+			<td><label for="">FirstName:</label>
+			</td>
+			<td>{{firstName}}
+			</td>
+		</tr>
+		<tr>
+			<td><label for="">LastName:</label>
+			</td>
+			<td>{{lastName}}</td>
+		</tr>
+		<tr>
+			<td><label for="">Gender:</label>
+			</td>
+			<td>{{gender}}</td>
+		</tr>
+		<tr>
+			<td><label for="">Age:</label>
+			</td>
+			<td>{{age}}</td>
+		</tr>
+
+	</table>
+
+	<div>
+		<button [disabled] = 'isDisabled'>clickMe</button>
+		<button disabled="{{isDisabled}}">DisableButton</button>
+		<!-- this is not working it is still showing desable but it is enable -->
+		<button>EnableButton</button>
+	</div>
+	
