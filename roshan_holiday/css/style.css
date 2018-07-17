@@ -76,6 +76,7 @@ body {
 .section-wrapper {
 	position:relative;
 	margin-top: 170px;
+	margin-bottom: 0;
 	height: 480px;
 }
 
@@ -164,7 +165,7 @@ footer{
 	position: relative;
 	bottom: 0;
 	right: 0;
-	margin-top: 140px;
+	margin-top: 50px;
 	padding: 10px;
 	background-color: #25a5bf;
 	z-index: 100;
