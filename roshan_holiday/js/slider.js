@@ -14,7 +14,7 @@ function SliderCounter(ar){
  };
 }
 
-var array = ["<img src='image/singapore_Ferris_wheel_640.jpg' alt='img' >","<img src='image/familyHoliday_640.jpg'  alt='img'>","<img src='image/aircraft.jpg'  alt='img'>","<img src='image/artificial-trees.jpg' alt='img' >"];
+var array = ["<img src='image/marina-bay-1435072_640.jpg' alt='img' >","<img src='image/singapore_Ferris_wheel_640.jpg' alt='img' >","<img src='image/familyHoliday_640.jpg'  alt='img'>","<img src='image/aircraft.jpg'  alt='img'>","<img src='image/artificial-trees.jpg' alt='img' >"];
     // var array = ["test1","test2","test3"];
     var slide = SliderCounter(array);
         
