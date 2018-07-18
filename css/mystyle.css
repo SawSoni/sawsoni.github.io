@@ -84,7 +84,7 @@ text-align: center;
 }
 
 
-.child1:hover .viewProjectShow,.child2:hover .viewProjectShow,.child3:hover .viewProjectShow,.child4:hover .viewProjectShow,.child5:hover .viewProjectShow,.child6:hover .viewProjectShow{
+.child1:hover .viewProjectShow,.child2:hover .viewProjectShow,.child3:hover .viewProjectShow,.child4:hover .viewProjectShow,.child5:hover .viewProjectShow,.child6:hover .viewProjectShow,.child8:hover .viewProjectShow{
 	top: 0px;
 	height:50px;
 	line-height: 50px;
@@ -151,7 +151,7 @@ text-align: center;
 }
 .child4 {
 	background: linear-gradient(#b84336, #c44736);
-	flex: 1 100%;
+	flex: 1 50%;
 	color: white;
 	position: relative;
 }
@@ -179,6 +179,15 @@ text-align: center;
 }
 .child7-child {
 	flex: 1 400px;
+}
+
+
+/******/
+.child8 {
+	background: linear-gradient(darkcyan, #0AB);
+	flex: 1 50%;
+	color: white;
+	position: relative;
 }
 .underline {
 	text-decoration: underline;
