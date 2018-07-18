@@ -288,7 +288,34 @@ footer{
 		font-size: 20px;
 	}
 
+/*•••••link-info-for-package•••••*/
+	.link .link-info-for-package {
+		list-style-type: none;
+		display: flex;
+		flex-flow: row wrap;
+		background-color: var(--main-bg-color);
+		padding: 10px 20px;
+	}
+	.link-info-for-package > li {
+		flex:1 0 13%;
+	}
+	.link-info-for-package > li a {
+		display: block;
+		color: #000;
+		text-decoration: none;
+		transition: all .4s;
+		font-weight: bold;
+		text-transform: lowercase;
+	}
+	.link-info-for-package > li a:hover{
+			background-color: #EA363E;
+			color: #000;
+			padding: 0 10px;
+			border-radius: 10px;
+		}
+
 /******singaporePackage.html******/
+
 
 .section-singaporePackage {
 	width:90%;
@@ -297,6 +324,7 @@ footer{
 	display: flex;
 	flex-flow: column wrap;
 }
+
 .section-singaporePackage .section-child:nth-child(1) {
 	/*border:1px solid red;*/
 	text-align: center;
@@ -334,7 +362,7 @@ footer{
  .day-one div:nth-child(2),.day-Two div:nth-child(2),.day-Three div:nth-child(2),
  .day-Four div:nth-child(2),.day-five div:nth-child(2),.day-Eight div:nth-child(2)
  {
- 	/*border:1px solid yellow;*/
+ 	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  	font-size: 1.4vw;
  }
  .day-one div:nth-child(2)::first-line,.day-Two div:nth-child(2)::first-line,.day-Three div:nth-child(2)::first-line,
@@ -346,6 +374,7 @@ footer{
  	position: relative;
 	background-color: transparent;
 	color: transparent;
+	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  }
  .imgChild {
  	position: absolute;
@@ -391,7 +420,62 @@ footer{
 
 .package-info-parent > .details-child {
 	margin:10px;
-	border:1px solid red;
+	padding: 10px;
+	/*box-shadow: -1px -1px 1px  var(--main-bg-color);*/
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-shadow:1px 1px 10px rgba(0,0,0,0.3);
+
+}
+.package-info-parent > .details-child h2 {
+	background-color: var(--main-bg-color);
+	text-align: center;
+	padding: 5px;
+}
+.package-info-parent > .details-child:nth-child(1) p{
+	padding: 10px 2px;
+	/*text-shadow:2px 2px 5px var(--main-bg-color);*/
+}
+
+.package-info-parent > .details-child :not(h2){
+	font-size: 1.2em;
+}
+
+.package-include > ul, .exclude ul {
+	list-style-image:url('../image/roshan/bullet_small.png');
+	list-style-position: inside;
+}
+.package-include > ul > li,.exclude ul > li {
+	padding: 5px;
+}
+
+.payment-info > p {
+	padding: 15px 50px;
+}
+
+.cancellation-info > table {
+	width:100%;
+	border-collapse: collapse;
+	font-size: .8em !important;
+
+}
+
+.cancellation-info > table tr td {
+	padding: 5px;
+}
+
+.note > p {
+	padding: 8px 10px;
+	letter-spacing: 1px;
+}
+.contact-us > address {
+	padding: 10px 20px;
+}
+.contact-us > address span {
+	margin-right: 25px;
+}
+
+.contact-us > address i {
+	color:var(--main-bg-color);
 }
 
 	
@@ -417,6 +501,15 @@ footer{
 
 	.imgWrapper h3 {
 		visibility: hidden;
+	}
+
+	.link .link-info-for-package {
+		flex-flow: column wrap;
+	}
+	.link .link-info-for-package li {
+		margin-bottom: 20px;
+		font-weight: bold;
+		font-size: 1.3em;
 	}
 
 }
