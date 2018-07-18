@@ -382,6 +382,18 @@ footer{
 	text-align: center;
 }
 
+/*••••••••••package-information••••••••••*/
+
+.package-info-parent {
+	display:flex;
+	flex-flow: column wrap;
+}
+
+.package-info-parent > .details-child {
+	margin:10px;
+	border:1px solid red;
+}
+
 	
 
 
@@ -401,6 +413,10 @@ footer{
 	.Cancellation-policy ,.Payment-Terms ,.price-according-person{
 	bottom: 133%;
     font-size: 1em;
+	}
+
+	.imgWrapper h3 {
+		visibility: hidden;
 	}
 
 }
