@@ -141,7 +141,7 @@ body {
 	bottom: 0%;
 	right: 15%;
 	transition: all .8s linear 0s;
-	width: 300px;
+	width: 20%;
 	height: 130px;
 	text-align: center;
 }
@@ -335,7 +335,11 @@ footer{
  .day-Four div:nth-child(2),.day-five div:nth-child(2),.day-Eight div:nth-child(2)
  {
  	/*border:1px solid yellow;*/
- 	font-size: 1.7vw;
+ 	font-size: 1.4vw;
+ }
+ .day-one div:nth-child(2)::first-line,.day-Two div:nth-child(2)::first-line,.day-Three div:nth-child(2)::first-line,
+ .day-Four div:nth-child(2)::first-line,.day-five div:nth-child(2)::first-line,.day-Eight div:nth-child(2)::first-line{
+ 	color:#EA363E;
  }
 
  .imgWrapper {
@@ -355,7 +359,7 @@ footer{
 		height: 300px;
 		line-height: 300px;
 		text-align: center;
-		color: #FFF;
+		color: #F69D4B;
 	}
 
  .imgWrapper:hover .imgChild {
