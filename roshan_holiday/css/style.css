@@ -461,8 +461,8 @@ footer{
 
 }
 
-.cancellation-info > table tr td {
-	padding: 5px;
+.cancellation-info > table tr td,.cancellation-info > table th {
+	padding: 7px;
 }
 
 .note > p {
