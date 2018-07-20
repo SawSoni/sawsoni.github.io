@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Binking Text</title>
+</head>
+<style>
+	.wrapper {
+		width: 60%;
+		margin:0 auto;
+		text-align: center;
+	}
+	/*h2 {
+		animation-name:blinker;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	}
+	h2:hover {
+		animation-play-state: paused;
+		cursor:pointer;
+	}*/
+
+	@keyframes blinker {
+		0%{opacity: 1.0;}
+		50%{opacity: 0.3;}
+		100%{opacity: 1.0;}
+	}
+	button {
+		background-color: #178CBC;
+		background-image: url(image/roshan/logo.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		/*background-attachment: fixed;*/
+		background-position: 0px 0px;
+		padding: 5px;
+		position: relative;
+		border:none;
+	}
+	.clickme {
+		position: absolute;
+		top:0;
+		left:0;
+		right: 0;
+		bottom: 0;
+	}
+	button p {
+		color: #E9353E;
+		font-size: 1.8em;
+	}
+
+	p{
+		animation-name:blinker;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	}
+	button:hover p   {
+		animation-play-state: paused;
+		cursor: pointer;
+	}
+	/*img {
+		height: 100px;
+		width: 150px;
+		animation-name:blinker;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+
+	}
+	img:hover {
+		animation-play-state: paused;
+		cursor: pointer;
+	}*/
+</style>
+<body>
+	<div class="wrapper">
+		<div class="thing">
+			<h2>Dubai Diwali Dhoom</h2>
+			<!-- <p>Date 8th Nov-12th Nov</p> -->
+		</div>
+		<div class="thing">
+			<button>
+			<p>Dubai Diwali Dhoom<br><span>Date 8th Nov-12th Nov</span>
+			</p>
+			<a href="" class="clickme"></a></button>
+			
+		</div>
+		<div class="thing1">
+			<img src="image/roshan.png" alt="img">
+		</div>
+
+	</div>
+</body>
+</html>
