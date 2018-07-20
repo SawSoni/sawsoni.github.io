@@ -162,10 +162,10 @@ body {
 /****take-to-tour***/
 	.take-to-tour {
 	background-color: var(--main-bg-color);
-	background-image: url(../image/roshan/logo_right.png);
+	background-image: url(../image/roshan/bengaluru_chennai_delhi.png);
 	background-repeat: no-repeat;
 	background-size: contain;
-	padding: 10px 15px;
+	/*padding: 10px 15px;*/
 	position: absolute;
 	bottom: 0%;
 	right: 15%;
@@ -190,8 +190,8 @@ body {
 }
 
 .dubai-tour-btn {
-		background-color: #FECA3F;
-		background-image: url(../image/roshan/logo.png);
+		background-color: var(--main-bg-color);
+		background-image: url(../image/roshan/roshan_only.png);
 		background-repeat: no-repeat;
 		background-size: contain;
 		/*background-position: 0px 0px;*/
@@ -203,7 +203,7 @@ body {
 }
 
 .dubai-tour-btn-text {
-	color: #E9353E;
+	color: #000;
 	/*font-size: 1.8em;*/
 	font-weight: bold;
 	height: 100%;
