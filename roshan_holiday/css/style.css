@@ -204,7 +204,7 @@ body {
 
 .dubai-tour-btn-text {
 	color: #E9353E;
-	font-size: 1.8em;
+	/*font-size: 1.8em;*/
 	font-weight: bold;
 	height: 100%;
 	animation-name:blinker;
