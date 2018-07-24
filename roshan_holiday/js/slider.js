@@ -27,5 +27,32 @@ var array = ["<img src='image/marina-bay-1435072_640.jpg' alt='img' >","<img src
                 displayArea.innerHTML = slide.backward();
         }
 
-        document.getElementById('front').addEventListener('click',display_front);
-        document.getElementById('back').addEventListener('click',display_back);
+        // document.getElementById('front').addEventListener('click',display_front);
+        // document.getElementById('back').addEventListener('click',display_back);
+
+        document.querySelector('.slideBackword').addEventListener('click',display_back);
+        document.querySelector('.slideForword').addEventListener('click',display_back);
+
+
+/*
+    * go to top button function
+*/
+
+    window.onscroll = function() {scrollFunction()};
+    // The onscroll event occurs when an element's scrollbar is being scrolled.
+    function scrollFunction() {
+        if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+            document.getElementById('myBtn').style.display = 'block';
+        }else {
+            document.getElementById('myBtn').style.display = 'none';
+        }
+    }
+/* this function will execute after clicking button*/
+    function topFunction(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    /* adding event listener to the button*/
+        myBtn.addEventListener('click', topFunction);
+
+

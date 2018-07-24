@@ -32,7 +32,25 @@ body {
 .email:hover{
 	animation-play-state: paused;
 }
+/*•••••••••••Go to top button•••••*/
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right:20px;
+	z-index: 199;
+	border:none;
+	outline: none;
+	background-color:#A8CD50;
+	/*color: white;*/
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 10px;
+}
 
+#myBtn:hover {
+	background-color: #555;
+}
 
 /************/
 .bar {

@@ -1,0 +1,36 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: tomato;
+
+}
+
+.main-Wrapper {
+	width:calc(100% - 80px);
+	background-color: #CCC;
+	margin:10px auto;
+	border:10px solid transparent;
+	height: 1000px;
+}
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right:20px;
+	z-index: 99;
+	border:none;
+	outline: none;
+	background-color:red;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+#myBtn:hover {
+	background-color: #555;
+}
