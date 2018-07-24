@@ -38,13 +38,14 @@ body {
 	position: fixed;
 	bottom: 10%;
 	right:5%;
-	/*margin-top:calc(100% - 150px);*/
-	/*margin-left:calc(100% - 100px);*/
 	z-index: 199;
 	border:none;
 	outline: none;
 	background-color:#A8CD50;
-	/*color: white;*/
+	background-image: url(../image/roshan/logo.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	color: white;
 	cursor: pointer;
 	padding: 15px;
 	border-radius: 10px;
