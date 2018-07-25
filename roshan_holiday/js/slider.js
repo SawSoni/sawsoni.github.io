@@ -29,9 +29,9 @@ var array = ["<img src='image/marina-bay-1435072_640.jpg' alt='img' >","<img src
 
         // document.getElementById('front').addEventListener('click',display_front);
         // document.getElementById('back').addEventListener('click',display_back);
-
+        document.querySelector('.slideForword').addEventListener('click',display_front);
         document.querySelector('.slideBackword').addEventListener('click',display_back);
-        document.querySelector('.slideForword').addEventListener('click',display_back);
+        
 
 
 /*
