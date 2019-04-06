@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AnimatedMenu</title>
+	<script src="js/external/jquery/dist/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/dynamic_table.css">
+	<link rel="stylesheet" type="text/css" href="css/layout10.css">
+	<style>
+		.navigation {
+			text-shadow: 0px 0px 1px rgba(0,0,0,0.2);
+			list-style: none;
+			position: fixed;
+			top: 190px;
+			height: 200px;
+		}
+
+		.navigation > li  {
+			position: relative;
+			background-color: rgba(0,0,0,0.2);
+			width:150px;
+			height: 50px;
+			padding: 20px;
+			margin-top: 2px;
+			left:-118px;
+			border-right: 50px solid red;
+			transition: left 500ms;
+		}
+
+		li.openSesame {
+			left:0;
+		}
+
+		/*toggle btn style*/
+		.wrapper {
+			position:absolute;
+			width:480px;
+			height: 25px;
+			top: 0;
+			bottom: 0;
+			left: 480px;
+			right: 0;
+			margin:auto;
+		}
+		.toggleBtn {
+			position: relative;
+			width:100px;
+			height:17px;
+			border:3px solid red;
+			padding:25px;
+			top:0;
+			background-color: #ABC;
+			color:#FFF;
+			font-family:sans-serif;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 15px;
+			border-radius: 15px;
+			box-shadow: 6px 6px 1px rgb(213,66,66);
+		}
+		/*this class will toggle with jquery*/
+		.toggleOn {
+			border:3px solid rgb(86,185,86);
+			background-color: rgb(70,225,70);
+			box-shadow: 0 0 0 rgb(0,0,0);
+			top:6px;
+		}
+
+		ul::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		ul {
+			list-style-type: none;
+			
+		}
+
+		.try > ul > li {
+			float: left;
+			margin-right: 20px;
+			background-color: #abc;
+			width:10%;
+			position: relative;
+		}
+
+		.try > ul > li:after {
+			position: absolute;
+		    bottom: -9px;
+		    left: -4px;
+		    display: inline-block;
+		    width: 100%;
+		    height: 9px;
+		    border-left: 1px black solid;
+		    border-right: 1px black solid;
+		    background: transparent;
+		    background: red;
+		    content: "";
+		        transform: skew(-35deg, 0);
+		        -moz-transform: skew(-35deg, 0);
+    		-ms-transform: skew(-35deg, 0);
+    		-o-transform: skew(-35deg, 0);
+    		-webkit-transform: skew(-35deg, 0);
+
+		}
+
+	</style>
+
+	<script>
+	$(document).ready(function(){
+		$('.navigation > li').hover(function(){
+			//This code executes when the mouse ppinter is over the list item
+			$(this).addClass('openSesame');
+		},function(){
+			//This code executes when the mouse pointer leaves the list item
+			$(this).removeClass('openSesame');
+		});
+
+		/* ====toggleBTN======*/
+		$('.toggleBtn').click(function(){
+			$(this).toggleClass("toggleOn");
+		})
+
+
+	});
+	</script>
+</head>
+<body>
+	<ul class="navigation">
+		<li><a href="#">HOME</a></li>
+		<li><a href="#">HOME</a></li>
+		<li><a href="#">HOME</a></li>
+		<li><a href="#">HOME</a></li>
+	</ul>
+	<div class="wrapper">
+		<a href="#" class="toggleBtn" >navigation</a>
+		<a href="#" class="toggleBtn">save</a>
+		<a href="#" class="toggleBtn">cencel</a>
+	</div>
+
+	<div class="try">
+		<ul>
+			<li><a href="#">Try</a></li>
+			<li><a href="#">Try</a></li>
+			<li><a href="#">Try</a></li>
+		</ul>
+	</div>
+</body>
+</html>

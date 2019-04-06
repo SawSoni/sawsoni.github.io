@@ -1,0 +1,10 @@
+//====
+
+Use the Angular CLI to generate a new component named hero-detail.
+>>>>>>>>
+ng generate component hero-detail
+
+
+Using the Angular CLI, create a service called hero.
+>>>>>>
+ng generate service hero

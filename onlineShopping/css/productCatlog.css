@@ -34,16 +34,16 @@
  	height: 59px;
  	position: relative;
  }
- /*sharch div style*/
+ /*search div style*/
  .headerFlex-Child:nth-child(3) {
- 	flex: 0 0 25%;
+ 	flex: 0 0 20%;
  	position: relative;
  	padding:  10px;
 
  }
  /*shopping bag div style*/
  .headerFlex-Child:nth-child(4) {
- 	flex: 0 0 8%;
+ 	flex: 0 0 13%;
  	padding: 12px;
  	/*border:1px solid #DDD;*/
  }

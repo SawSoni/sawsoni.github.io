@@ -1,0 +1,98 @@
+* {
+	box-sizing: border-box;
+}
+.CreateTask {
+	width: 80%;
+	margin:50px auto;
+}
+.row::after{
+	content:"";
+	display:table;
+	clear:both;
+}
+.row {
+	width: 100%;
+}
+
+.col-25 {
+	float: left;
+	width: 25%;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-bottom: 5px;
+	
+}
+.col-75 {
+	float:left;
+	width:75%;
+	box-sizing: border-box;
+	margin-bottom: 5px;
+	
+}
+input[type="text"]{
+	display: block;
+	width: 100%;
+	padding: 10px;
+	transition: all 0.5s;
+}
+input[type="button"]{
+	display: block;
+	float:right;
+	padding:8px 12px;
+	background-color: #CCC;
+	border:none;
+	margin-left: 10px;
+	transition: all 0.5s;
+
+}
+input[type="text"]:hover {
+	background-color: #CCC;
+	font-size:1em;
+
+}
+
+input[type="button"]:hover {
+	font-size: 1em;
+}
+
+.listContainer {
+	width: 90%;
+	margin:30px auto;
+	/*text-align: center;*/
+}
+input[type="checkbox"]{
+	/*transition:all .5s;*/
+	font-size: 4em;
+}
+
+.listContainer >.row:nth-child(1){
+	text-align: center;
+	text-decoration: underline;
+}
+
+.listContainer >.row:nth-child(2) > div:nth-child(3){
+	text-align: right;
+}
+
+.listContainer >.row:nth-child(3) {
+	cursor: pointer;
+	text-decoration: none;
+	color:#000;
+}
+/*this is dynamic div which is creting by angularjs so style is not applying in all
+find out the solution.
+*/
+
+
+
+
+@media (max-width: 600px){
+	.col-25,.col-75 {
+		width: 100%;
+	}
+
+	.listContainer >.row:nth-child(2) {
+		display: none;
+	}
+
+} 

@@ -1,0 +1,65 @@
+<app-header></app-header>
+
+<div class="CreateTask">
+	<div class="row">
+		<div class="col-25">
+			<label>Enter Task Title: </label>
+		</div>
+		<div class="col-75">
+			<input type="text" [(ngModel)] = 'taskTitle' placeholder="Add Task Title">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-25">
+			<label>IsDone?</label>
+		</div>	
+		<div class="col-75">
+			<input type="text" name="" [value] = 'isDone'>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-25">
+			
+		</div>
+		<div class="col-75">
+			<input type="button" name="" value="Cancel">
+			<input type="button" name="" value="Save" (click) = 'createTaskInComponent()'>
+		</div>
+	</div>	
+</div>
+
+<hr/>
+<!-- Here we will show list of tasks -->
+<div class="listContainer">
+<div class="row">
+	<h4>Watch All Task List*</h4>
+</div>
+<div class="row">
+	<div class="col-25">
+		<p><strong>Select Your Task</strong></p>
+	</div>
+	<div class="col-25">
+		<p><strong>This is your Task</strong></p>
+	</div>
+	<div class="col-25">
+		<p><strong>Delete your Tasks</strong></p>
+	</div>
+</div>
+
+ <div *ngFor="let task of tasks" class="row">
+	<div class="col-25">
+		<input type="checkbox" name="">
+	</div>
+	<div class="col-25">	
+		<p><a href="#">{{task.title}}</a></p>
+	</div>
+	<div class="col-25">
+		<input type="button" name="" value="X">
+	</div>
+</div>
+
+<!-- <div *ngFor="let task of tasks">
+<p>{{task.title}}</p>
+</div> -->
+
+	

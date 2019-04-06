@@ -1,40 +1,56 @@
 
 
-$(document).ready(function(){
+$(document).ready(function () {
+	/**
+	 * Get all the products in the cart and update the DOM #cart
+	 * Call this function on load of the DOM so that HTML shows the products in the cart
+	 */
+	refreshCart();
 
-var panel = $('#section_content_panel');
 
-   function toggalNavPanel(){
-	   	// var panel = $('#section_content_panel');
-	   	// var navArrow = $('#downarrow');
-	   	var panel = document.getElementById('section_content_panel');
+	var panel = $('#section_content_panel');
+
+	function toggalNavPanel() {
+		// var panel = $('#section_content_panel');
+		// var navArrow = $('#downarrow');
+		var panel = document.getElementById('section_content_panel');
 		var navArrow = document.getElementById("downarrow");
-	   	var maxH = '400px';
-	   	if(panel.style.height == maxH){
-	   		panel.style.height = '0px';
-	   		navArrow.innerHTML = "&#9662;";
-	   	}else {
-	   		panel.style.height = maxH;
+		var maxH = '400px';
+		if (panel.style.height == maxH) {
+			panel.style.height = '0px';
+			navArrow.innerHTML = "&#9662;";
+		} else {
+			panel.style.height = maxH;
 			navArrow.innerHTML = "&#9652;";
-	   	}
-   }
-$('#womwnTab').on('click',toggalNavPanel);
-// will get products from REST Api and pass to this function
-	createDivOfProducts(products);
+		}
+	}
+	// on click toggle nav panel
+	$('#womwnTab').on('click', toggalNavPanel);
 
-
+	// will get products from REST Api and pass to this function
+	updateProductContainer();
 });
-var prd1 = {id:1, name:"xxxx", price:2200, description:"xxxxxxx"};
-var products = [prd1,prd1,prd1,prd1,prd1]
+
+
+/**
+ * 
+ */
+function updateProductContainer(){
+	var prd1 = { id: 1, name: "kurti", price: 2200, description: "xxxxxxx" };
+	// this products should come from REST API of products
+	var products = [prd1, prd1, prd1, prd1, prd1];
+	var divs = createDivOfProducts(products);
+	$('#productContainer').html(divs);
+}
 
 /**
 * create div of products
 */
-function createDivOfProducts(products){
-
+function createDivOfProducts(items) {
 	var divs = "";
-	products.forEach( (product) => {
-	var prd = `<div class="product">
+	var that = this;
+	items.forEach((item) => {
+		var prd = `<div class="product">
 					<div class="figureDivContainer">
 						<figure class="productImg">
 							<div class="wishIconDiv">
@@ -58,7 +74,7 @@ function createDivOfProducts(products){
 						<span class="new">New</span>
 						<!-- <i class="fas fa-shipping-fast"></i> -->
 						<button type="button" class="infoBtn">
-							<span class="wish bagSpan tool-tip"> Add To Bag </span>
+							<span class="wish bagSpan tool-tip" onClick="addProduct('${item.name}')"> Add To Bag </span>
 							<i class="fa fa-shopping-bag icon"></i>
 
 						</button>
@@ -75,13 +91,27 @@ function createDivOfProducts(products){
 					</div>
 
 		</div>`;
-			divs = divs + prd;	
+		that.divs = that.divs + prd;
+		
+		
+	});
+	return that.divs;
 
-	} );
+}
 
+/**
+ * Add Product to the Cart
+ * @param {product} product 
+ */
+function addProduct(product) {
+	Cart.addProduct(product);
+	// refresh cart to update number of items in the cart
+	refreshCart();
+}
 
-	$('#productContainer').html(divs);
-
+function refreshCart() {
+	var products = Cart.getProducts();
+	$('#cart').html(products.length);
 }
 
 // function getProduct(product){
@@ -97,7 +127,7 @@ function createDivOfProducts(products){
 // 	 						<img src="image/girl-dress.jpg" height="400px" alt="img">	
 // 						</figure>
 // 					</div>
-				
+
 // 					<div class="product-info">
 // 						<span>New</span>
 // 						<button type="button">btn</button>

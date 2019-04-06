@@ -1,9 +1,10 @@
+//this is rest full api
 var express = require('express');
 var router = express.Router();//from express
 var mongojs = require('mongojs');
 //var db = mongojs('mongodb://sawsoni:Incorrect12!@ds045628.mlab.com:45628/tasklist_soni',['tasks']);
  var db = mongojs('mongodb://localhost:27017/soni');
-
+// this is database information
 
 //
 router.get('/',function(req,res,next){
@@ -18,8 +19,8 @@ router.get('/',function(req,res,next){
 });
 
 //set home page it will be get request(GET)
-//get all tasks
-router.get('/tasks',function(req,res,next){
+//Get all tasks
+router.get('/task',function(req,res,next){
 	// res.send('Task API');
 	db.tasks.find(function(err,tasks){
 		if(err){
@@ -30,7 +31,7 @@ router.get('/tasks',function(req,res,next){
 	})
 });
 
-//get singal Task
+//Get Single Task
 router.get('/task/:id',function(req,res,next){
 	console.log(req.params);
 	
@@ -43,9 +44,9 @@ router.get('/task/:id',function(req,res,next){
 	})
 });
 
-//Save Task
+//Save/Create Task
 router.post('/task',function(req,res,next){
-	console.log(req.body);
+	console.log(req.body);//to get the data from form
 	console.log(res.body);
 	var task = req.body;
 	if(!task.title || (!task.isDone)){

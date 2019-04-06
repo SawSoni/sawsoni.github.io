@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Navbar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-left">
+        <ul class="nav nav-pills nav-stacked">
+            <li><a href="#home"><i class="fa fa-home"></i><span> Link1 </span></a></li>
+            <li><a href="#info"><i class="fa fa-info-circle"></i><span> Link2 </span></a></li>
+            <!--<li><a href="#love"><i class="fa fa-heart"></i><span> Link3 </span></a></li>-->
+            <!--<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+                Tutorials
+                <span class="caret"></span>
+            </button-->
+           <li><a href="#love">
+                <i class="fa fa-heart"></i> Link3
+                <span class="dropdown">
+                    <span class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </span>
+                </span>
+
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+                </ul>
+                </a>
+           </li>
+    <li><a href="#work"><i class="fa fa-briefcase"></i><span> Link4 </span></a></li>
+    <li><a href="#contact"><i class="fa fa-envelope"></i><span> Link5 </span></a></li>
+    </ul>
+    </div>
+    <!--end navigation-->
+    <!-- 1st section-->
+    <div class="wrapper">
+        <div class="container" id="home">
+            <div class="row">
+                <h2>Link 1</h2>
+            </div>
+        </div>
+        <!-- 2nd section-->
+        <div class="container" id="info">
+            <div class="row">
+                <h2>Link 2</h2>
+            </div>
+        </div>
+        <!--3rd section-->
+        <div class="container" id="love">
+            <div class="row">
+                <h2>Link 3</h2>
+            </div>
+        </div>
+        <!--4th section-->
+        <div class="container" id="work">
+            <div class="row">
+                <h2>Link 4</h2>
+            </div>
+        </div>
+        <!--5th section-->
+        <div class="container" id="contact">
+            <div class="row">
+                <h2>Link 5</h2>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="dropup">
+        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+            Tutorials
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

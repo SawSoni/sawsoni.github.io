@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Admin-template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="Wrapper">
+        <div class="container-fluid bg headerBox">
+            <div class="row">
+                <div class="col-md-2">
+                     <span class="logo"><img src="image/logo.jpg" width="100px"></span>
+                </div>
+                <div class="col-md-3">
+                    <div onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+                <div class="col-md-7 align-right">
+                    <span class="user"><i class="fa fa-user-circle"></i>
+                        <div class="redround">
+                            3
+                        </div>
+                    </span>
+                    <span class="mail">
+                        <i class="fa fa-envelope"></i>
+                        <div class="envelope">
+                            1
+                        </div>
+                    </span>
+                    <div class="child-align">
+                        <div class="photoRound">
+                            <img src="image/admin.jpg" width="40px" height="40px" alt="Alternate Text" />
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+        <!-- header end -->
+        <div class="section">
+            <div class="row hiderow">
+                <div class="col-md-3">
+                    <div class="navBox">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <span class="navicon"><i class="fa fa-bars"></i></span>
+                                    <a href="#" class="link">Dhasboard</a>
+                                    <!--<span class="entite">&#10148;</span>-->
+                                </li>
+                                <li>
+                                    <span class="navicon"><i class="fa fa-bars"></i>
+                                    </span><a href="#" class="link">Charts</a>
+                                    <!--<span class="entite">&#10148;</span>-->
+                                </li>
+                                <li>
+                                    <span class="navicon"><i class="fa fa-bars"></i></span>
+                                    <a href="#" class="link">Table</a>
+                                    <!--<span class="entite">&#10148;</span>-->
+                                </li>
+                                <li>
+                                    <span class="navicon"><i class="fa fa-bars"></i></span>
+                                    <a href="#" class="link">User Interface</a>
+                                    <!--<span class="entite">&#10148;</span>-->
+                                </li>
+                                <li>
+                                    <span class="navicon"><i class="fa fa-bars"></i></span>
+                                    <a href="#" class="link">Example Pages</a>
+                                    <span class="entite exampleRed">&#10111;</span>
+                               
+                             
+                                </li>
+                                <li>
+                                    <span class="navicon"><i class="fa fa-bars"></i></span>
+                                    <a href="#" class="link">content</a>
+                                    <!--<span class="entite">&#10148;</span>-->
+                                </li>
+                                <li>
+                                    <span class="navicon"><i class="fa fa-bars"></i></span>
+                                    <a href="#" class="link">content</a>
+                                    <!--<span class="entite">&#10148;</span>-->
+                                </li>
+                                <li>
+                                    <span class="navicon"><i class="fa fa-bars"></i></span>
+                                    <a href="#" class="link">content</a>
+                                    <span class="entite">&#10148;</span>
+                                    <!-- sub menu -->
+                                    <div style="display:none;">
+                                        <ul>
+                                            <li><a href="#">content</a></li>
+                                            <li><a href="#">content</a></li>
+                                            <li><a href="#">content</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-9" >
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Dashbord</h5>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="pull-right">Home/Dashbord</h5>
+                        </div>
+                    </div>
+                    <!-- section start -->
+                    <div class="row sectionRow">
+                        <div class="col-md-3">
+                            <div class="sectionRowCol">
+                            <div class="float-left">
+                                <p>ORDER</p>
+                                <p>1,587</p>
+                                <p>15 New Orders</p>
+                            </div>
+                            <div class="float-right">
+                                <span><i class="fa fa-file" id="icon"></i></span>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="sectionRowCol" style="background-color:#ffd800;">
+                                <div class=" float-left">
+                                <p>VISITORS</p>
+                                <p>250</p>
+                                <p>Bounce rate 250</p>
+                            </div>
+                                <div class="float-right">
+                                    <span><i class="fa fa-file" id="icon1"></i></span>
+                                </div>
+                            </div>
+                            </div>
+                        <div class="col-md-3">
+                            <div class="sectionRowCol">
+                                <div class="float-left">
+                                    <p>VISITORS</p>
+                                    <p>250</p>
+                                    <p>Bounce rate 250</p>
+                                </div>
+                                <div class="float-right">
+                                    <span><i class="fa fa-file" id="icon2"></i></span>
+                                </div>
+                               </div>
+                            </div>
+                        <div class="col-md-3">
+                            <div class="sectionRowCol" style="background-color:#ff0000;">
+                                <div class="float-left">
+                                    <p>VISITORS</p>
+                                    <p>250</p>
+                                    <p>Bounce rate 250</p>
+                                </div>
+                                <div class="float-right">
+                                    <span><i class="fa fa-file" id="icon3"></i></span>
+                                </div>
+                            </div>
+                            </div>
+
+                    </div>
+                    <!-- first row end here -->
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                          <div class="sectionrow2col">
+                              <!--<span><i class="fa fa-chart-line"></i></span>-->
+                              <h2 class="headerBox">Item sold Amount</h2>
+                            <div>
+                                Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites
+                                Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites
+                            </div>
+                            <div>
+                                <img src="https://cdn.pixabay.com/photo/2017/01/05/00/15/profits-1953616__340.jpg" alt="Alternate Text" width="400px" height="300px" />
+                            </div>
+                            <p>Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites</p>
+                        </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="sectionrow2col" style="padding:10px 20px">
+                                <!--<i class="fa fa-chart-bar"></i>-->
+                                <h2>Color Analytics</h2>
+                                <div>
+                                    Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites
+                                    Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites
+                                </div>
+                                <div>
+                                    <img src="https://cdn.pixabay.com/photo/2012/04/24/11/41/circle-39522__340.png" width="200px" height="200px" alt="Alternate Text" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="sectionrow2col" style="padding:10px 20px">
+                                <!--<span><i class="fa fa-chart-bar"></i></span>-->
+                                <h2>Color Analytics2</h2>
+                                <div>
+                                    Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites
+                                    Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites
+                                </div>
+                                <div>
+                                    <img src="https://cdn.pixabay.com/photo/2018/05/02/14/57/arrows-3368751__340.png" width="200px" height="200px" alt="Alternate Text" />
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

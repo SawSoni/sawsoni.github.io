@@ -1,0 +1,205 @@
+.feedback{
+	position:fixed;
+	right:0;
+	bottom:0;
+	z-index:1000;
+	float:right;
+	box-shadow: 3px 3px orange;
+	display:none;
+}
+.feedback a {
+	  background: #007fb8 none repeat scroll 0 0;
+    border-bottom: 3px solid #fdd922;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    height: 35px;
+    padding: 5px;
+}
+.CB_btn
+{
+     background-color: #b03060;
+    border: 1px solid #b03060;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-family: Arial;
+    font-weight: bold;
+    padding: 4px;
+    text-align: center;
+    width: 44%;
+}
+.CB_text_box
+{
+    padding:7px;
+    width:90%;
+    border:1px solid #ccc;
+}
+.CB_text_box:hover
+{
+   
+   border:1px solid #9BE0F9;
+}
+.CB_text_box:focus
+{
+   
+   border:1px solid #22ACE4;
+}
+.feedback .form{
+	clear:both;
+	height:230px;
+	border:1px solid #00rder:1px solid #000;
+	background:#fff;
+	padding:15px;
+	display: none;
+}
+.feedback .status{
+	font-size:16px;
+}
+.contact-us{
+	position:fixed;
+	bottom:0;
+	z-index:1000;
+	float:left;
+}
+
+.contact-us2
+{
+     display:none;
+     position:fixed;
+	bottom:0;
+	z-index:1000;
+	float:left;
+    }
+.contact-us a {
+	   background: green none repeat scroll 0 0;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    height: 45px;
+    padding: 5px;
+    text-align: center;
+}
+.blink_text
+{
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: blinker;
+    animation-timing-function: linear;
+    color: white;
+}
+
+.contact-us2 a {
+	  background: none repeat scroll 0 0 #3fc611;
+    border: 2px solid #3fc611;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    height: 35px;
+    padding: 5px;
+}
+
+
+ .cont
+        {
+            width: 140px;
+            position: fixed;
+            display:none;
+            bottom: 0px;
+            z-index: 10000;
+            padding: 7px 4px 7px 4px;
+            background-color: #007fb8;
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 3px solid #fdd922;
+          
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            text-align: center;
+        }
+         .callme
+        {
+            width: 140px;
+            position: fixed;
+            left: 0px;
+            bottom: 0px;
+            z-index: 10000;
+            
+           
+            color: #fff;
+            text-decoration: none;
+           
+         
+           
+           
+            display:none;
+        }
+        
+        
+        .std
+        {
+             margin-bottom:20px;
+            }
+        
+        .std h2
+        {
+          padding-left: 0px; font-size: 14px; color: rgb(84, 84, 84); font-weight: 600; padding-bottom: 4px; margin-bottom: 10px; line-height: 24px;
+            
+            }
+            
+           .std p
+            {
+                text-align: justify; line-height: 24px; font-size: 14px;
+                }
+          .std  ul
+            {
+                padding-left: 25px; line-height: 22px; list-style: disc; padding-bottom:15px;
+                }
+                
+              .std  ul li
+                {
+                     font-size:14px;  line-height:22px;
+                    }
+                    
+                    
+                    
+                    .unselectable {
+    -moz-user-select: none;
+}
+
+
+ .std2
+ {
+     margin-top:20px; padding:10px;  min-height:100px;
+     }
+
+
+        .std2 h2
+        {
+          padding-left: 0px; font-size: 15px; color: rgb(84, 84, 84); font-weight: bold; padding-bottom: 8px; margin-bottom: 10px; line-height: 24px;
+             border-bottom:1px solid #e4e4e4;  text-transform:uppercase;
+            }
+            
+           .std2 p
+            {
+                text-align: justify; line-height: 24px; font-size: 14px;
+                }
+          .std2  ul
+            {
+                padding-left: 25px; line-height: 22px; list-style: disc; padding-bottom:15px;
+                }
+                
+              .std2  ul li
+                {
+                     font-size:14px;  line-height:22px;
+                    }
+                    

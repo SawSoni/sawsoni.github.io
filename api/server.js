@@ -19,7 +19,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 
-//use route file
+//use route file //here we set the url of the file
 app.use('/',index);//intract with index.html, url http://3000
 app.use('/api',tasks);//intract with DB the url will be http://3000/api
 app.use('/login', login);

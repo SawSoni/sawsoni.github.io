@@ -13,7 +13,7 @@
 
 		<label for="name">Type your name here</label>
 
-			<input type="text" id="name">
+			<input type="text" id="name" onkeyup="validate(this.value)">
 			
 			<input type="button" value="clickme" onclick="welcomeName()">
 
@@ -24,5 +24,36 @@
 
 
 <script type="text/javascript" src="js/ex1.js"></script>
+<script>
+	function validate(name){
+		console.log(name);
+		if(name == ' ' || name == ''){
+			alert("Name is undefined");
+		}else if(parseInt(name) != NaN){
+			alert("Name should not be number");
+		}else{
+			alert("Name is string");
+		}
+	}
+
+	function A(name){
+		return `Hello, "my name is ${name}"`;
+	}
+
+	var b = (fun,name) => {
+		var result = (fun(name));
+		console.log(result);
+	}
+	
+	b(A,"Soni");
+
+	b(A,"Naresh");
+
+	
+
+
+
+
+</script>
 </body>
 </html>

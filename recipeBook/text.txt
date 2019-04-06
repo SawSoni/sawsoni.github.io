@@ -1,0 +1,11 @@
+if want to generate component without spec-file the CLI command is: 
+=============this ClI default behaviour to create cpmponent under the app folder=======
+===like this========
+
+ ng generate component --spec false component name.
+
+======if you want to create under the component a sub component right the full path===
+
+====like the==
+
+ng generate component recipes/recipi-list
